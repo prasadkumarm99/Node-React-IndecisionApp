@@ -1,0 +1,12 @@
+{
+  "name": "Learning",
+  "version": "1.0.0",
+  "description": "Learning Node.js and React.js",
+  "main": "index.js",
+  "author": "Prasad Kumar M",
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "babel-preset-env": "1.5.2",
+    "babel-preset-react": "6.23.0"
+  }
+}
