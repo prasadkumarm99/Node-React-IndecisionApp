@@ -1,7 +1,6 @@
-const template =
-    <div>
-        <p>Hellow hi</p>
-    </div>
+console.log("This is from app.js!");
 
-const root = document.getElementById("root")
-ReactDOM.render(template, root)
+const template = <p>Hellow hi</p>;
+
+var root = document.getElementById("root");
+ReactDOM.render(template, root);
