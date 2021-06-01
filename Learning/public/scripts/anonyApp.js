@@ -1,18 +1,6 @@
 "use strict";
 
-console.log("This is from app.js!");
-
 var list = ["Name", "Email", "Phone"];
-
-var showList = function showList(l) {
-    var accum = document.getElementById("list");
-    list.forEach(function (ele) {
-        var li = document.createElement("li");
-        li.innerText = ele;
-        accum.appendChild(li);
-    });
-    return accum;
-};
 
 var template = React.createElement(
     "div",
@@ -20,10 +8,27 @@ var template = React.createElement(
     React.createElement(
         "h1",
         null,
-        "Hellow hi"
+        "KnowIT Learnings Data"
     ),
-    React.createElement("ol", { id: "list" }),
-    showList(list)
+    React.createElement(
+        "ol",
+        null,
+        React.createElement(
+            "li",
+            null,
+            list[0]
+        ),
+        React.createElement(
+            "li",
+            null,
+            list[1]
+        ),
+        React.createElement(
+            "li",
+            null,
+            list[2]
+        )
+    )
 );
 
 var root = document.getElementById("root");
