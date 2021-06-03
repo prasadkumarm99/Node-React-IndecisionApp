@@ -29,7 +29,7 @@ const template1 =
   </div>
 
 const template2 = 
-  <div>
+  <div>     
     <h1>KnowIT Learnings Details Template 2</h1>
     <p>Name: {namer(details2)}</p>
     <p>Email: {details2.email ? details2.email : "Unknown"}</p>
