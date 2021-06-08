@@ -6,7 +6,26 @@ class IndecisionApp extends React.Component {
     this.addOption = this.addOption.bind(this)
     this.removeOption = this.removeOption.bind(this)
     this.state = {
-      options: []
+      options: props.options
+    }
+  }
+  componentDidMount() {
+    try {
+      const json = localStorage.getItem("options")
+    const options = JSON.parse(json)
+    console.log(options)
+    if (options) {
+      this.setState(() => ({ options }))
+    }
+  } catch (e) {}
+
+    
+  }
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.options.length != this.state.options.length) {
+      const json = JSON.stringify(this.state.options)
+      console.log(json)
+      localStorage.setItem("options", json)
     }
   }
   onPick() {
@@ -43,7 +62,6 @@ class IndecisionApp extends React.Component {
   render() {
     const title = "Indecision App"
     const subtitle = "Welcome to decision maker."
-
     return (
       <div>
         <Header 
@@ -63,6 +81,10 @@ class IndecisionApp extends React.Component {
       </div>
     )
   }
+}
+
+IndecisionApp.defaultProps = {
+  options: ["First Option", "Second Option"]
 }
 
 const Header = (props) => {

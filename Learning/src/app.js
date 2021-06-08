@@ -1,14 +1,6 @@
-const list = ["Name", "Email", "Phone"]
+import React from "react"
+import ReactDOM from "react-dom"
 
-const template = 
-    <div>
-        <h1>KnowIT Learnings Data</h1>
-        <ol>
-            <li>{list[0]}</li>
-            <li>{list[1]}</li>
-            <li>{list[2]}</li>
-        </ol>
-    </div>
+import IndecisionApp from "./components/IndecisionApp.js"
 
-var root = document.getElementById("root")
-ReactDOM.render(template, root)
+ReactDOM.render(<IndecisionApp />, document.getElementById("root"))
