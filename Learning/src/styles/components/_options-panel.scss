@@ -1,0 +1,28 @@
+.panel {
+  background: darken($blue-back, 20%);
+  color: $soft-white;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.option--panel {
+  background: darken($blue-back, 5%);
+  padding: 10px;
+}
+
+.label {
+  margin: 0;
+  font-weight: bold;
+}
+
+.label--msg {
+  background: darken($blue-back, 5%);
+  padding: 10px 110px;
+}
+
+.input {
+  width: 75%;
+  background: darken(white, 20%);
+  font-weight: bold;
+}
