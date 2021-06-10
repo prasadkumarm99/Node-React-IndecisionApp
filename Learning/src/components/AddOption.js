@@ -16,7 +16,7 @@ export default class AddOption extends React.Component {
   render() {
     return (
       <div className="container">
-        <div className="panel">
+        <div className="panel panel--add">
           <input
             className="input"
             id="option"

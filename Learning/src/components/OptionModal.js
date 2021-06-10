@@ -8,10 +8,11 @@ const OptionModal = (props) => {
       onRequestClose={props.onOkay}
       contentLabel="SelectedOption"
       ariaHideApp={false}
+      className="modal"
     >
       <h2>Selected Option</h2>
       <h3>{props.isSelected}</h3>
-      <button onClick={props.onOkay}>Okay</button>
+      <button className="button" onClick={props.onOkay}>Okay</button>
     </Modal>
   )
 }
