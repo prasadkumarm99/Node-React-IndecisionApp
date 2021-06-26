@@ -6,7 +6,6 @@
   "author": "Prasad Kumar M",
   "license": "Apache License 2.0",
   "scripts": {
-    "server": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack serve"
   },
