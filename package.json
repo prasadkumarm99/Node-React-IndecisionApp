@@ -1,11 +1,12 @@
 {
-  "name": "LearningApp",
+  "name": "learning-app",
   "version": "1.0.0",
   "description": "Learning Node.js and React.js",
   "main": "index.js",
   "author": "Prasad Kumar M",
   "license": "Apache License 2.0",
   "scripts": {
+    "start": "node src/app.js",
     "build": "webpack",
     "dev-server": "webpack serve"
   },
