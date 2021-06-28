@@ -1,10 +1,10 @@
-// what should I do button
+// what should I pick button
 .action__button {
   background: #040048;
   color: aliceblue;
   border: none;
   width: 100%;
-  font-size: $l-size;
+  font-size: 24px;
   font-weight: bold;
   border-bottom: 5px solid darken(#040048, 10%);
   padding: $m-size;
@@ -37,4 +37,10 @@
 .model--button {
   height: $l-size;
   padding: 0 10px;
+}
+
+@media (min-width: 450px) {
+  .action__button {
+    font-size: $l-size;
+  }
 }
