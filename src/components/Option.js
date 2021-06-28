@@ -1,7 +1,7 @@
 import React from "react"
 
 const Option = (props) => (
-  <div name="1" className="container">
+  <div name="1" className="container container--list">
     <div name="2" className="panel option--panel">
       <p className="label">{props.option}</p>
       <button 

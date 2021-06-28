@@ -12,7 +12,7 @@ const OptionModal = (props) => {
     >
       <h2>Selected Option</h2>
       <h3>{props.isSelected}</h3>
-      <button className="button" onClick={props.onOkay}>Okay</button>
+      <button className="add-button model--button" onClick={props.onOkay}>Okay</button>
     </Modal>
   )
 }
