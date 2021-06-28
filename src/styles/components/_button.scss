@@ -12,14 +12,15 @@
 }
 
 // Add Option button
-.button {
+.add-button {
   background: #040048;
   color: aliceblue;
   border: none;
   font-size: $m-size;
   font-weight: bold;
+  margin: 0;
+  height: $xl-size;
   border-bottom: 5px solid darken(#040048, 10%);
-  padding: 10px;
 }
 
 // Remove all and remove buttons

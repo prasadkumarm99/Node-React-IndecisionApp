@@ -24,7 +24,7 @@ export default class AddOption extends React.Component {
             onKeyUp={this.add}
           ></input>
           <button 
-            className="button"
+            className="add-button"
             onClick={this.add}
           >
             Add Option
